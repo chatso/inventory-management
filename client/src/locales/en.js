@@ -6,8 +6,22 @@ export default {
     orders: 'Orders',
     finance: 'Finance',
     demandForecast: 'Demand Forecast',
+    restocking: 'Restocking',
     companyName: 'Catalyst Components',
-    subtitle: 'Inventory Management System'
+    subtitle: 'Inventory Management System',
+    reports: 'Reports',
+    mainNavigation: 'Main navigation',
+    openMenu: 'Open menu',
+    closeMenu: 'Close menu',
+    lightMode: 'Light mode',
+    darkMode: 'Dark mode',
+    expandSidebar: 'Expand sidebar',
+    collapseSidebar: 'Collapse sidebar',
+    sections: {
+      overview: 'Overview',
+      operations: 'Operations',
+      financeInsights: 'Finance & insights'
+    }
   },
 
   // Dashboard
@@ -106,6 +120,11 @@ export default {
     title: 'Orders',
     description: 'View and manage customer orders',
     allOrders: 'All Orders',
+    submittedOrders: 'Submitted Orders',
+    submittedOrdersEmpty: 'No restocking orders submitted yet',
+    submittedOrdersHint: 'Use the Restocking tab to build and place a restocking order.',
+    submittedOrdersError: 'Failed to load submitted orders',
+    leadTimeDays: '{count} days',
     totalOrders: 'Total Orders',
     totalRevenue: 'Total Revenue',
     avgOrderValue: 'Avg Order Value',
@@ -125,8 +144,10 @@ export default {
       totalValue: 'Total Value',
       status: 'Status',
       expectedDelivery: 'Expected Delivery',
-      actualDelivery: 'Actual Delivery'
-    }
+      actualDelivery: 'Actual Delivery',
+      leadTime: 'Lead Time'
+    },
+    supplier: 'Supplier'
   },
 
   // Finance/Spending
@@ -185,6 +206,39 @@ export default {
       change: 'Change',
       trend: 'Trend',
       period: 'Period'
+    }
+  },
+
+  // Restocking
+  restocking: {
+    title: 'Restocking',
+    description: 'Choose a budget and place a restocking order for the items with the fastest growing demand',
+    noForecasts: 'No demand forecasts available',
+    noForecastsHint: 'Restocking recommendations need demand forecasts for items with increasing or stable demand.',
+    budget: 'Restocking Budget',
+    budgetHint: 'Items are ranked by forecast demand growth and added while they fit in the remaining budget.',
+    totalSpend: 'Total Spend',
+    remainingBudget: 'Remaining Budget',
+    itemsToOrder: 'Items to Order',
+    orderLeadTime: 'Order Lead Time',
+    expectedDelivery: 'Expected Delivery',
+    days: '{count} days',
+    recommendedItems: 'Recommended Items',
+    placeOrder: 'Place Order',
+    placingOrder: 'Placing order...',
+    orderPlaced: 'Restocking order placed',
+    viewInOrders: 'View in Orders',
+    budgetTooLow: 'Budget too low for any item',
+    budgetTooLowHint: 'Increase the budget to see recommended items.',
+    notAffordable: 'Not affordable at this budget',
+    overBudget: 'Over budget',
+    excludedDecreasing: '{count} items with decreasing demand are not recommended.',
+    table: {
+      supplier: 'Supplier',
+      quantity: 'Quantity',
+      unitCost: 'Unit Cost',
+      lineCost: 'Cost',
+      leadTime: 'Lead Time (days)'
     }
   },
 

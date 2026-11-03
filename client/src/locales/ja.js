@@ -6,8 +6,22 @@ export default {
     orders: '注文',
     finance: '財務',
     demandForecast: '需要予測',
+    restocking: '補充発注',
     companyName: '触媒コンポーネンツ',
-    subtitle: '在庫管理システム'
+    subtitle: '在庫管理システム',
+    reports: 'レポート',
+    mainNavigation: 'メインナビゲーション',
+    openMenu: 'メニューを開く',
+    closeMenu: 'メニューを閉じる',
+    lightMode: 'ライトモード',
+    darkMode: 'ダークモード',
+    expandSidebar: 'サイドバーを展開',
+    collapseSidebar: 'サイドバーを折りたたむ',
+    sections: {
+      overview: '概要',
+      operations: '運用',
+      financeInsights: '財務・分析'
+    }
   },
 
   // Dashboard
@@ -106,6 +120,11 @@ export default {
     title: '注文',
     description: '顧客注文の表示と管理',
     allOrders: 'すべての注文',
+    submittedOrders: '発注済みの注文',
+    submittedOrdersEmpty: '補充発注はまだ送信されていません',
+    submittedOrdersHint: '「補充発注」タブから発注内容を作成して注文してください。',
+    submittedOrdersError: '発注済みの注文を読み込めませんでした',
+    leadTimeDays: '{count}日',
     totalOrders: '総注文数',
     totalRevenue: '総収益',
     avgOrderValue: '平均注文額',
@@ -125,8 +144,10 @@ export default {
       totalValue: '合計金額',
       status: 'ステータス',
       expectedDelivery: '予定配達日',
-      actualDelivery: '実際の配達日'
-    }
+      actualDelivery: '実際の配達日',
+      leadTime: 'リードタイム'
+    },
+    supplier: '仕入先'
   },
 
   // Finance/Spending
@@ -185,6 +206,39 @@ export default {
       change: '変化',
       trend: 'トレンド',
       period: '期間'
+    }
+  },
+
+  // Restocking
+  restocking: {
+    title: '補充発注',
+    description: '予算を選択して、需要の伸びが大きい品目の補充発注を行います',
+    noForecasts: '利用可能な需要予測がありません',
+    noForecastsHint: '補充の推奨には、需要が増加または安定している品目の需要予測が必要です。',
+    budget: '補充予算',
+    budgetHint: '予測需要の伸び率が高い順に、残りの予算内に収まる品目を追加します。',
+    totalSpend: '支出合計',
+    remainingBudget: '残り予算',
+    itemsToOrder: '発注品目数',
+    orderLeadTime: '発注リードタイム',
+    expectedDelivery: '予定配達日',
+    days: '{count}日',
+    recommendedItems: '推奨品目',
+    placeOrder: '発注する',
+    placingOrder: '発注中...',
+    orderPlaced: '補充発注を受け付けました',
+    viewInOrders: '注文一覧で確認する',
+    budgetTooLow: '予算が不足しているため、推奨できる品目がありません',
+    budgetTooLowHint: '予算を増やすと推奨品目が表示されます。',
+    notAffordable: '現在の予算では購入できない品目',
+    overBudget: '予算超過',
+    excludedDecreasing: '需要が減少している{count}件の品目は推奨されません。',
+    table: {
+      supplier: '仕入先',
+      quantity: '数量',
+      unitCost: '単価',
+      lineCost: '金額',
+      leadTime: 'リードタイム(日)'
     }
   },
 
