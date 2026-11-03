@@ -1,0 +1,29 @@
+{
+  "skill_name": "vue-saas-redesign",
+  "evals": [
+    {
+      "id": 1,
+      "name": "inventory-core-redesign",
+      "prompt": "This Vue 3 app in the working directory has a top nav bar. Redesign the UI into a modern SaaS-style interface: vertical navigation sidebar on the left instead of the top nav, consistent spacing, polished professional look. Don't touch the data/API logic or the view templates.",
+      "expected_output": "Sidebar shell in App.vue, tokens file, shared styles, FilterBar offset fixed, all 7 routes still reachable, build passes, no view logic changes.",
+      "app": "inventory-client",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "inventory-full-sidebar-features",
+      "prompt": "Make this Vue app look like a modern SaaS product. I want a left sidebar with grouped nav sections, it should collapse to an icon-only rail and remember that, work as a drawer on mobile, have the language switcher and user menu in a footer area, and support a dark mode toggle. Keep it consistent with the existing i18n (en/ja).",
+      "expected_output": "Collapsible/persisted sidebar, mobile drawer under 1024px, footer holding LanguageSwitcher and ProfileMenu, theme toggle with pre-paint theme init, i18n keys added to both locales, no emoji, no v-html.",
+      "app": "inventory-client",
+      "files": []
+    },
+    {
+      "id": 3,
+      "name": "taskboard-generality",
+      "prompt": "Redesign this small Vue app (TaskBoard) so it feels like a polished SaaS dashboard: left vertical sidebar nav instead of the header nav, consistent spacing, professional look. Keep the green brand feel.",
+      "expected_output": "Works on a different app: script-setup, no i18n, green palette mapped to tokens, sticky sub-toolbar offset (top:64px) fixed, modal overlay still above the sidebar, user menu not clipped.",
+      "app": "taskboard",
+      "files": []
+    }
+  ]
+}
